@@ -1,7 +1,9 @@
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
-
+  router: {
+    base: '/markdown-preview/'
+  },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Markdown Live Preview',
@@ -27,8 +29,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    { src: '~/plugins/prism-nuxt.js', mode: 'client' }
-    // { src: 'prismjs/components/prism-docker.min.js', mode: 'client' }
+    { src: '~/plugins/prism-nuxt.js' }
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -46,7 +47,6 @@ export default {
   ],
   markdownit: {
     preset: 'default',
-    // html: true,
     breaks: true,
     use: ['markdown-it-prism']
   },
