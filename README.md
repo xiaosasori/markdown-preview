@@ -1,5 +1,5 @@
 # markdown-preview
-## (Demo)[https://xiaosasori.github.com/markdown-preview/]
+## [Demo](https://xiaosasori.github.io/markdown-preview/)
 
 ## Build Setup
 
